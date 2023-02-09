@@ -1,0 +1,12 @@
+l=list(map(int,input().split()))
+while len(l)>1:
+    a=max(l)
+    l.remove(a)
+    b=max(l)
+    l.remove(b)
+    if (a-b)!=0:
+        l.append((a-b))
+if len(l)==0:
+    print(0)
+else:
+    print(*l)
